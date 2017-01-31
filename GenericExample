@@ -3,5 +3,6 @@ public class GenericExample{
   public static void main(string ... args){
   ArrayList<String> list= ArrayList<>();
 
+System.out.println(list.size());
   }
 }
