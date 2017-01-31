@@ -1,0 +1,7 @@
+import java.util.ArrayList;
+public class GenericExample{
+  public static void main(string ... args){
+  ArrayList<String> list= ArrayList<>();
+
+  }
+}
