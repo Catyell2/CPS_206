@@ -11,7 +11,7 @@ public class RecursionExample{
   public int doSum (int n){
     return (n*n + n)/2;
   }
- 
+
 
 
 }
