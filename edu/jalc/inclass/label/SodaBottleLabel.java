@@ -1,9 +1,12 @@
 package edu.jalc.inclass.label;
 
+import edu.jalc.inclass.color.Color;
+import edu.jalc.inclass.logo.SodaBottleLogo;
+
 public class SodaBottleLabel{
-  double height;
+  private double height;
   //needs composit object
-   Logo logo;
+   SodaBottleLogo sodaBottleLogo;
    Color color;
 
 
@@ -11,9 +14,19 @@ public class SodaBottleLabel{
   this.height=0.0;
 
 }
-  public SodaBottleLid(double height){
+  public SodaBottleLabel(double height, SodaBottleLogo sodaBottleLogo,Color color){
     this.height = height;
-
+    this.sodaBottleLogo = sodaBottleLogo;
+  }
+//the "get..."s are for testing puropuses, I belive
+  public double getHeight(){
+    return getHeight;
+  }
+  public Color getColor(){
+    return getColor;
+  }
+  public SodaBottleLogo getSodaBottleLogo(){
+    return getSodaBottleLogo;
   }
 
 
