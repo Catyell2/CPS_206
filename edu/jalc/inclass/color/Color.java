@@ -1,9 +1,9 @@
 package edu.jalc.inclass.color;
 
 public class Color{
-  byte red;
-  byte blue;
-  byte green;
+  private byte red;
+  private byte blue;
+  private byte green;
 
   private Color(){
     this.red=0;
@@ -16,13 +16,13 @@ public class Color{
     this.green=green;
   }
   public Color getRed(){
-    return getRed;
+    return red;
   }
   public Color getBlue(){
-    return getBlue;
+    return blue;
   }
   public Color getGreen(){
-    return getGreen;
+    return green;
   }
 
 

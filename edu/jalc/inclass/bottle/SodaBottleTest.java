@@ -2,6 +2,7 @@ package edu.jalc.inclass.bottle;
 
 import edu.jalc.inclass.lid.SodaBottleLid;
 import edu.jalc.inclass.liquid.Soda;
+import edu.jalc.inclass.label.SodaBottleLabel;
 
 public class SodaBottleTest {
 
@@ -36,6 +37,12 @@ public class SodaBottleTest {
 		Soda soda = new Soda(1.0);
 		SodaBottle sodaBottle = new SodaBottle(1.0, new SodaBottleLid(1,1), soda);
 		assert(soda == sodaBottle.getSoda());
+	}
+	public void testGetLabel() throws Exception {
+		System.out.println("Testing SodaBottle::getLabel");
+		SodaBottleLabel sodaBottleLabel = new SodaBottleLabel(1.0, null, null);
+		SodaBottle sodaBottle = new SodaBottle(1.0, new SodaBottleLid(1,1), null, sodaBottleLabel);
+		assert(sodaBottleLabel == sodaBottle.getLabel());
 	}
 
 	public static void main(String... args) throws Exception {

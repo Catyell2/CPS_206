@@ -12,21 +12,24 @@ public class SodaBottleLabel{
 
   private SodaBottleLabel(){
   this.height=0.0;
+  this.color=null;
+  this.sodaBottleLogo=null;
 
 }
   public SodaBottleLabel(double height, SodaBottleLogo sodaBottleLogo,Color color){
     this.height = height;
+    this.color= color;
     this.sodaBottleLogo = sodaBottleLogo;
   }
 //the "get..."s are for testing puropuses, I belive
   public double getHeight(){
-    return getHeight;
+    return height;
   }
   public Color getColor(){
-    return getColor;
+    return color;
   }
   public SodaBottleLogo getSodaBottleLogo(){
-    return getSodaBottleLogo;
+    return sodaBottleLogo;
   }
 
 

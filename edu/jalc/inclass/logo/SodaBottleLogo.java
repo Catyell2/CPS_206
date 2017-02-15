@@ -13,8 +13,8 @@ public class SodaBottleLogo{
     this.height=height;
   }
 
-  public SodaBottleLogo getSodaBottleLogo(){
-    return getSodaBottleLogo;
+  public double getHeight(){
+    return this.height;
   }
 
 }
